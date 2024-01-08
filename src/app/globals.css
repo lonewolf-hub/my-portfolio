@@ -2,27 +2,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar-track {
+  background: #EEE9DD; /* Track color */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar-thumb {
+  background: #EEE9DD; /* Thumb color */
+  border-radius: 5px; /* Border radius of the thumb */
+  border: 2px solid #EE9B8D; /* Border color of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EE9B8D; /* Thumb color on hover */
 }
