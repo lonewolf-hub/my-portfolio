@@ -4,16 +4,16 @@ import {RiLinkedinFill} from 'react-icons/ri'
 
 const HomeComponent = () => {
   return (
-    <div id='home' className='w-full h-screen text-center'>
+    <div id='home' className=' w-full h-screen text-center bg-bodyBackground'>
     <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
-    <p className='uppercase text-sm tracking-widest text-gray-600'> let's build something together</p>
+    <p className='uppercase text-sm tracking-widest text-textColor'> let's build something together</p>
     
-    <h1 className='py-4 text-gray-700'> Hey, I'm <span className= 'text-[#5651e5] '>Jai Shukla</span> </h1>
+    <h1 className='py-4 text-textColor'> Hey, I'm <span className= 'text-[#5651e5] '>Jai Shukla</span> </h1>
 
-    <h1 className='py-25 uppercase text-[200%] text-gray-700'> A Full-Stack Web Developer</h1>
+    <h1 className='py-25 uppercase text-[200%] text-textColor'> A Full-Stack Web Developer</h1>
 
-    <p className='py-4 text-gray-700 max-w-[70%] m-auto'>
+    <p className='py-4 text-textColor max-w-[70%] m-auto'>
 Hey there! I'm a fresh graduate super excited about web development, both the front and back ends. I'm all about diving into cool technologies like Next.js and React.js, and I'm totally hooked on TypeScript. Now, I'm on a mission to amp up my skills and explore the fascinating world of decentralized tech. Can't wait to see where this journey takes me! 🚀 #TechEnthusiast #WebDevPassion</p>
 
     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
@@ -24,8 +24,8 @@ Hey there! I'm a fresh graduate super excited about web development, both the fr
           rel="noreferrer"
         >
 
-      <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-        <RiLinkedinFill />
+      <div className='rounded-full shadow-lg shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+        <RiLinkedinFill className="text-textColor"/>
       </div>
       </a>
 
@@ -35,8 +35,8 @@ Hey there! I'm a fresh graduate super excited about web development, both the fr
           target="_blank"
           rel="noreferrer"
         >
-      <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-      <AiFillGithub />
+      <div className='rounded-full shadow-lg shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+      <AiFillGithub className="text-textColor"/>
       </div>
       </a>
       <a
@@ -44,8 +44,8 @@ Hey there! I'm a fresh graduate super excited about web development, both the fr
           target="_blank"
           rel="noreferrer"
         >
-      <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-      <AiOutlineTwitter />
+      <div className='rounded-full shadow-lg shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+      <AiOutlineTwitter className="text-textColor"/>
       </div>
       </a>
       <a
@@ -53,14 +53,12 @@ Hey there! I'm a fresh graduate super excited about web development, both the fr
           target="_blank"
           rel="noreferrer"
         >
-      <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-      <AiOutlineMail />
+      <div className='rounded-full shadow-lg shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+      <AiOutlineMail className="text-textColor"/>
       </div>
       </a>
 
     </div>
-
-    
       </div>
     </div>
 </div>

@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div id="about" className="w-full  p-2 flex items-center py-16 overflow-x-hidden">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+    <div id="about" className="w-full  p-2 flex items-center py-16 overflow-x-hidden bg-bodyBackground">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 text-textColor">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             {" "}
@@ -35,7 +35,7 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 sm:flex-row sm:p-8 ">
+        <div className="w-full h-auto shadow-lg shadow-gray-700 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 sm:flex-row sm:p-8 ">
           <Image
             className="rounded-3xl rounded-tr-3xl object-contain md:object-cover"
             src={"/assets/images/jai.jpg"}

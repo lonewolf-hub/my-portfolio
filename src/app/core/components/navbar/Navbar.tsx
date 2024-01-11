@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu,AiFillGithub, AiOutlineTwitter, AiOutlineMail} from 'react-icons/ai'
 import {RiLinkedinFill} from 'react-icons/ri'
+import DarkMode from '../darkmode/DarkMode';
 const Navbar = () => {
 
   const[nav,setnav]= useState(false)
@@ -50,11 +51,11 @@ const Navbar = () => {
     
     <div key={pathname} style={{backgroundColor : navBg}} 
     className={shadow? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
-        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'> 
+        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-bodyBackground'> 
         <Image src={"/assets/icon/js.png"} alt= "image" width={60} height={50} />
 
-        <div>
-          <ul style={{color:linkColor}} className='hidden md:flex'>
+        <div className='text-textColor'>
+          <ul className='hidden md:flex'>
             <Link href='/'>
               <li className='ml-10 text-sm  uppercase font-semibold hover:border-b'>Home</li>
             </Link>
@@ -73,7 +74,12 @@ const Navbar = () => {
             <Link href='/#contact'>
               <li className='ml-10 text-sm uppercase font-semibold hover:border-b'>Contact</li>
             </Link>
+            <li className='px-2'>
+            <DarkMode/>
+            </li>
           </ul>
+
+          
 
           <div onClick={handlenav} className='md:hidden '>
             <AiOutlineMenu size={25} />
