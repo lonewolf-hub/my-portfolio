@@ -37,34 +37,46 @@ const DarkMode = () => {
   };
 
   return (
-    <div className="relative flex items-center space-x-2">
+    <div className="relative flex  space-x-2">
       <label htmlFor="darkmode-toggle" className="cursor-pointer">
         <input
           type="checkbox"
           id="darkmode-toggle"
           onChange={toggleTheme}
           checked={selectedTheme === 'dark'}
-          className="hidden"
+          className="hidden dark_mode_input"
         />
-        <div className="relative w-14 h-6 bg-gray-300 rounded-full p-1 transition duration-300 ease-in-out flex items-center shadow-md">
+        <div className="relative w-14 h-6rounded-full p-1 transition duration-300 ease-in-out flex items-center shadow-md dark_mode_label">
+       
           <div
-            className={`absolute w-6 h-6 bg-white rounded-full shadow-md transition-transform ${
-              selectedTheme === 'dark' ? 'translate-x-full' : 'translate-x-0'
-            }`}
-          />
-          <div
-            className={`shadow- absolute left-0 top-1/2 transform -translate-y-1/2 w-7 h-6 bg-yellow-400 rounded-full transition-transform ${
+            className={`absolute right-0 top-1/2 transform -translate-y-1/2 w-7 h-6 rounded-full transition-transform ${
               selectedTheme === 'dark' ? 'opacity-0' : 'opacity-100'
             }`}
           >
-            <Image src="/assets/icon/Sun.svg" alt="Sun" width={25} height={20} />
+            <Image
+              src="/assets/icon/Sun.svg"
+              alt="Sun"
+              width={25}
+              height={20}
+              className={`mx-auto my-auto ${
+                selectedTheme === 'dark' ? 'opacity-0' : 'opacity-100'
+              }`}
+            />
           </div>
           <div
-            className={`shadow-lg absolute right-0 top-1/2 transform -translate-y-1/2 w-7 h-6 bg-gray-600 rounded-full transition-transform ${
+            className={`absolute left-0 top-1/2 transform -translate-y-1/2 w-7 h-6 rounded-full transition-transform ${
               selectedTheme === 'dark' ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <Image src="/assets/icon/Moon.svg" alt="Moon" width={25} height={20} />
+            <Image
+              src="/assets/icon/Moon.svg"
+              alt="Moon"
+              width={25}
+              height={20}
+              className={`mx-auto my-auto ${
+                selectedTheme === 'dark' ? 'opacity-100' : 'opacity-0'
+              }`}
+            />
           </div>
         </div>
       </label>

@@ -74,11 +74,10 @@ const Navbar = () => {
             <Link href='/#contact'>
               <li className='ml-10 text-sm uppercase font-semibold hover:border-b'>Contact</li>
             </Link>
-            <li className='px-2'>
+            <li className='px-4 '>
             <DarkMode/>
             </li>
           </ul>
-
           
 
           <div onClick={handlenav} className='md:hidden '>

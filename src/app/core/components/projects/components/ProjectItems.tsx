@@ -11,7 +11,7 @@ interface ProjectItemsProps {
 
 const ProjectItems: React.FC<ProjectItemsProps> = ({ title, backgroundImg, projectUrl, Stack }) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-gray-500 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#6792ef]'>
+    <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-gray-500 rounded-xl p-4 group hover:bg-gradient-to-r from-[#59fff7] to-[#0f73d8]'>
       <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' width={564} height={310} layout="responsive" objectFit="cover"/>
 
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
