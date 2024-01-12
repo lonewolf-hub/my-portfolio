@@ -12,20 +12,20 @@ const Projects = () => {
         <h2 className='py-4'>Have a look at what I've built</h2>
 
         <div className='grid md:grid-cols-2 gap-8'>
-           <Projectitems title='Portfolio-Site' backgroundImg={"/assets/projects/banner1.png"} projectUrl='/portfolio' Stack="Next Js"/>
-           <Projectitems title='Krypt' backgroundImg={""} projectUrl='/krypt' Stack="React Js" />
+           <Projectitems title='Portfolio' backgroundImg={"/assets/projects/portfolio.png"} projectUrl='/portfolio' Stack="Next Js"/>
+           <Projectitems title='Railway App' backgroundImg={"/assets/projects/railway.png"} projectUrl='/railway' Stack="Next Js" />
 
-           <Projectitems title='Decentralized Credit System' backgroundImg={""} projectUrl='/credit' Stack="React Js"/>
+           <Projectitems title='Admin Panel' backgroundImg={"/assets/projects/snipit-admin1.png"} projectUrl='/snipit-admin' Stack="Next Js"/>
 
-           <Projectitems title='DAO DAPP' backgroundImg={""} projectUrl='/dao' Stack="React Js"/>
+           <Projectitems title='Next Chat App' backgroundImg={"/assets/projects/nextchatapp.png"} projectUrl='/next-chat-app' Stack="Next Js"/>
             
-           <Projectitems title='Decentralized Wallet' backgroundImg={""} projectUrl='/Wallet' Stack="React Js"/>
+           <Projectitems title='React Movie App' backgroundImg={"/assets/projects/movieapp.png"} projectUrl='/portfolio' Stack="React Js"/>
 
 
-           <Projectitems title=' Responsive Landing Page' backgroundImg={""} projectUrl='/landingpage' Stack="React Js"/>
+           <Projectitems title='Ambulance Booking App' backgroundImg={"/assets/projects/ambulance.png"} projectUrl='/ambulance' Stack="Next Js"/>
         
             
-           <Projectitems title='Drawing App' backgroundImg={""} projectUrl='/drawing' Stack="Canva"/>
+           <Projectitems title='MERN E-Commerce' backgroundImg={"/assets/projects/banner1.png"} projectUrl='/mern-ecommerce' Stack="React-Js"/>
         
            </div>
 

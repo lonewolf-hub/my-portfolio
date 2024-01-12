@@ -88,8 +88,8 @@ const Navbar = () => {
 
         </div>
 
-        <div className= {nav? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
-          <div className= {nav? 'fixed left-0 top-0 w-[75%] sm:w[60%] md:w-[45%] h-screen bg-[#ecf0fc] p-10 ease-in duration-500' :
+        <div className= {nav? 'md:hidden fixed left-0 top-0 w-full h-screen text-textColor bg-black/70' : ''}>
+          <div className= {nav? 'fixed left-0 top-0 w-[75%] sm:w[60%] md:w-[45%] h-screen bg-bodyBackground p-10 ease-in duration-500' :
           'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
           <div>
 
@@ -109,6 +109,9 @@ const Navbar = () => {
 
             <div className=' flex flex-col'>
               <ul className='uppercase '>
+              <li className='px-2'>
+            <DarkMode/>
+            </li>
               <Link href='/'>
               <li onClick={()=> setnav(false)} className='py-2 text-sm font-semibold'>Home</li>
             </Link>
