@@ -60,7 +60,7 @@ const About = () => {
           <p>
           Currently I am working as a Full Stack Developer, my journey reflects continuous growth and a commitment to excellence in the ever-evolving tech landscape.
           </p>
-          <div className="md:flex flex-col h-40 sm:hidden">
+          <div className="md:flex flex-col h-40 hidden">
           <p className="mt-2 text-2xl font-bold">Education</p>
           <Text>
           <Educations>
