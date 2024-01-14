@@ -4,18 +4,12 @@
 
 :root{
   --body_background: #ecf0f3;
-  --body_color: #2196F3;
-  --link_color:  #FF9800;
-  --text_color: #333333;
-  --accent_color:  #9C27B0;
+  --text_color: #201e1e;
 }
 
 [data-theme="dark"]{
-  --body_background: #221e1e;
-  --body_color:#4A90E2;
-  --link_color: #FFCA28;
-  --text_color: #cbc2c2;
-  --accent_color: #F44336;
+  --body_background: #282323;
+  --text_color: #dcd1d1;
 }
 
 html {
@@ -57,7 +51,7 @@ li{
 }
 
 button{
-  @apply shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#56d5e8] to-[#1079e1] text-white
+  @apply shadow-md shadow-gray-700 rounded-xl uppercase bg-gradient-to-r from-[#45c0d3] to-[#1079e1] text-white
 }
 
 .dark_mode {

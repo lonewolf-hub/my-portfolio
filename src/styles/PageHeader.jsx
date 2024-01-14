@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "styled-components";
-import { NavbarContext } from "@/app/context/NavbarContext";
+import { NavbarContext } from "@/context/NavbarContext";
 import {  typeScale } from "../utils/typography";
 import { blue } from "../utils/colors";
 

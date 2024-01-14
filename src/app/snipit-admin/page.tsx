@@ -1,24 +1,32 @@
-import React from 'react'
+import React from 'react';
 import Navbar from '../core/components/navbar/Navbar';
 import ProjectDetail from '../core/components/projects/components/ProjectDetail';
 
 const SnipitAdmin = () => {
-    const technologies = ['HTML', 'CSS', 'JavaScript', 'HTML canvas'];
+  const technologies = ['Next.js', 'TypeScript', 'HTML', 'Tailwind CSS', 'Firebase', 'React Select'];
 
   return (
     <div>
-             <Navbar/>
-          <ProjectDetail
+      <Navbar />
+      <ProjectDetail
         imageSrc='/assets/projects/snipit-admin.png'
-        heading='Drawing Application'
-        description={['📌 A small Drawing Application using HTML canvas to draw graphics.', '📌 The canvas element is only a container for graphics.',' So I\'ve used JavaScript to actually draw the graphics.', '📌 For Styling simple CSS is used.']}
-        demoLink='https://shivam-vishwakarma991.github.io/Drawing-App-HTML-Canvas/'
-        codeLink='https://github.com/Shivam-vishwakarma991/Drawing-App-HTML-Canvas'
+        heading='Snipit Admin Panel'
+        description={[
+          '🚀 An Admin Panel built with Next.js, TypeScript, and Tailwind CSS.',
+          '📰 Manage and feed news into the database with ease.',
+          '📸 Image Upload: Integrates with Firebase for seamless image uploading.',
+          '📝 Features include editing, deleting, and scheduling news.',
+          '🔄 Utilizes interceptors for making API calls seamlessly.',
+          '📅 Bulk scheduling and advanced news filtering options available.',
+          '✏ If a news item is in draft state, you can edit and set it to the active state.',
+          '🔀 Conditional Dropdowns: Implements React Select for rendering custom dropdowns conditionally.',
+        ]}
+        demoLink='https://your-demo-link-here'
+        codeLink='https://your-github-link-here'
         technologies={technologies}
       />
-      
     </div>
-  )
-}
+  );
+};
 
-export default SnipitAdmin
+export default SnipitAdmin;

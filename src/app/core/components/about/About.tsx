@@ -2,16 +2,15 @@
 import React, { useEffect, useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { blue, green, yellow } from "../utils/colors";
-import { Educations } from "../styles/Home.styled";
-import { Text } from "../styles/Home.styled";
+import { blue, green, yellow } from "../../../../utils/colors";
+import { Educations } from "../../../../styles/Home.styled";
+import { Text } from "../../../../styles/Home.styled";
 import { AboutItem } from "./AboutItem";
 import { useInView } from "react-intersection-observer";
 import gsap from "gsap";
 import Flip from "gsap/Flip";
 import AnimatedText from "./AnimatedText";
 
-const ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const About = () => {
   const { ref, inView } = useInView({});
@@ -45,31 +44,6 @@ const About = () => {
     });
   }, []);
 
-  const [header, setHeader] = useState("About");
-  useEffect(() => {
-    animate();
-  }, []);
-
-  function animate() {
-    let iteration = 0;
-    let interval = setInterval(() => {
-      setHeader("");
-      let newStr = "";
-      "About".split("").forEach((element, index) => {
-        let char = ALPHABETS[Math.round(Math.random() * 26)] ?? "M";
-        if (index < iteration) {
-          char = "About"[index];
-        }
-        newStr += char;
-      });
-      setHeader(newStr);
-      iteration += 1;
-      if (iteration > "About".length) {
-        clearInterval(interval);
-      }
-    }, 60);
-  }
-
   return (
     <div id="about" className="w-full  p-2 flex items-center py-16 overflow-x-hidden bg-bodyBackground" ref={ref}>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 text-textColor">
@@ -86,7 +60,7 @@ const About = () => {
           <p>
           Currently I am working as a Full Stack Developer, my journey reflects continuous growth and a commitment to excellence in the ever-evolving tech landscape.
           </p>
-          <div className="flex flex-col h-40 ">
+          <div className="md:flex flex-col h-40 sm:hidden">
           <p className="mt-2 text-2xl font-bold">Education</p>
           <Text>
           <Educations>

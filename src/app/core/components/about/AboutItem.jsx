@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutItemWrapper } from '../styles/about'
+import { AboutItemWrapper } from '../../../../styles/about'
 
 
 export const AboutItem = ({ color, active, data }) => {

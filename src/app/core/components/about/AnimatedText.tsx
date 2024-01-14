@@ -34,7 +34,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
   }, []);
 
   return (
-    <p onMouseEnter={animate} style={{ cursor: "pointer" }} className="uppercase tracking-widest text-[#5651e5] text-4xl font-extrabold">
+    <p onMouseEnter={animate} style={{ cursor: "pointer" }} className="uppercase tracking-widest text-[#527ae9] text-4xl font-extrabold">
       {header}
     </p>
   );

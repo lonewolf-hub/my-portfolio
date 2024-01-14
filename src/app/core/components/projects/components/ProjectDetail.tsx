@@ -1,14 +1,15 @@
-// ProjectDetail.tsx
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
-import { FaAngleRight } from 'react-icons/fa'; // Import a cooler bullet point icon
+import { FaAngleRight } from 'react-icons/fa';
+import AnimatedText from '../../about/AnimatedText';
 
 interface ProjectDetailProps {
   imageSrc: string;
   heading: string;
-  description: string[]; // Updated to handle multiline description
+  description: string[];
   demoLink: string;
   codeLink: string;
   technologies: string[];
@@ -27,18 +28,18 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
       <div className='w-screen h-[50vh] relative'>
         {/* ... your existing code for the image */}
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={imageSrc} alt={heading} />
-        {/* ... your existing code for the overlay */}
+        <div className='absolute z-2 w-full h-full' style={{ background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3))' }}></div>
       </div>
 
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
         <div className='col-span-4'>
-          <p className='text-xl px-1 uppercase text-[#5651e5]'>Project</p>
-          <h2>{heading}</h2>
+          <AnimatedText text='Overview'/>
+          <p className='py-2 text-2xl font-bold'>{heading}</p>
           <div className='py-3'>
             {description.map((line, index) => (
               <div key={index} className='flex items-center'>
                 <FaAngleRight className='text-[#5651e5] pr-2' />
-                <p>{line}</p>
+                <p className='py-2'>{line}</p>
               </div>
             ))}
           </div>
@@ -56,9 +57,9 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
         <div className='col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
-            <div className='grid grid-cols-3 md:grid-cols-1'>
+            <div className='grid grid-cols-3 md:grid-cols-1 '>
               {technologies.map((tech, index) => (
-                <p key={index} className=' py-2 flex items-center'>
+                <p key={index} className=' py-4 flex items-center'>
                   <RiRadioButtonFill className='pr-1' /> {tech}
                 </p>
               ))}

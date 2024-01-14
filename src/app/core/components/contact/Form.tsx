@@ -16,14 +16,14 @@ const Form = () => {
                     <label className='uppercase text-sm py-2'>
                       Name
                     </label>
-                    <input name='name' className='border-2 rounded-lg p-3 flex border-gray-300' type="text" required />
+                    <input name='name' className='border-2 rounded-lg p-3 flex border-gray-500 bg-transparent' type="text" required />
                   </div>
 
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>
                       Phone Number
                     </label>
-                    <input name='phone' className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                    <input name='phone' className='border-2 rounded-lg p-3 flex border-gray-500 bg-transparent' type="text" />
                   </div>
 
                 </div>
@@ -32,7 +32,7 @@ const Form = () => {
                   <label className='uppercase text-sm py-2'>
                     EMAIL
                   </label>
-                  <input name='email' className='border-2 rounded-lg p-3 flex border-gray-300' type="email" required />
+                  <input name='email' className='border-2 rounded-lg p-3 flex border-gray-500 bg-transparent' type="email" required />
 
                 </div>
 
@@ -40,13 +40,13 @@ const Form = () => {
                   <label className='uppercase text-sm py-2'>
                     SUBJECT
                   </label>
-                  <input className='border-2 rounded-lg p-3 flex border-gray-300' type="TEXT" required />
+                  <input className='border-2 rounded-lg p-3 flex border-gray-500 bg-transparent' type="TEXT" required />
                 </div>
 
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Message</label>
                   <textarea
-                    className='border-2 rounded-lg p-3 border-gray-300'
+                    className='border-2 rounded-lg p-3 border-gray-500 bg-transparent'
                     rows={10}
                     name='message'
                   ></textarea>

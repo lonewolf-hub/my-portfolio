@@ -1,16 +1,17 @@
 import styled from "styled-components";
 import { blue, pink } from "../utils/colors";
-import {typeScale} from "../utils/typography"
+import { typeScale } from "../utils/typography";
 
-export const AboutItemWrapper = styled.div`
+interface AboutItemWrapperProps {
+  color?: Record<string, string>;
+}
+
+export const AboutItemWrapper = styled.div<AboutItemWrapperProps>`
   overflow: hidden;
-  background-color: ${(props) =>
-    props.color ? props.color["60"] : blue["60"]};
-
+  background-color: ${(props) => (props.color ? props.color["60"] : blue["60"])};
   color: ${(props) => (props.color ? props.color["00"] : blue["00"])};
   border: 4px solid ${(props) => (props.color ? props.color["00"] : blue["00"])};
-  box-shadow: 6px 6px 0
-    ${(props) => (props.color ? props.color["00"] : blue["00"])};
+  box-shadow: 6px 6px 0 ${(props) => (props.color ? props.color["00"] : blue["00"])};
   border-radius: 1rem;
   width: 90px;
   height: 90px;
@@ -75,4 +76,3 @@ export const AboutItemWrapper = styled.div`
     }
   }
 `;
-

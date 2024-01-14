@@ -1,23 +1,32 @@
-import React from 'react'
+import React from 'react';
 import Navbar from '../core/components/navbar/Navbar';
 import ProjectDetail from '../core/components/projects/components/ProjectDetail';
 
 const NextChatApp = () => {
-    const technologies = ['HTML', 'CSS', 'JavaScript', 'HTML canvas'];
+  const technologies = ['Next.js', 'Firebase', 'HTML', 'TailWind CSS', 'JavaScript'];
 
   return (
     <div>
-                <Navbar/>
-          <ProjectDetail
+      <Navbar />
+      <ProjectDetail
         imageSrc='/assets/projects/nextchatapp1.png'
-        heading='Drawing Application'
-        description={['📌 A small Drawing Application using HTML canvas to draw graphics.', '📌 The canvas element is only a container for graphics.',' So I\'ve used JavaScript to actually draw the graphics.', '📌 For Styling simple CSS is used.']}
-        demoLink='https://shivam-vishwakarma991.github.io/Drawing-App-HTML-Canvas/'
-        codeLink='https://github.com/Shivam-vishwakarma991/Drawing-App-HTML-Canvas'
+        heading='Next.js Chat Application'
+        description={[
+          '🚀 A real-time chat application built with Next.js and Firebase.',
+          '🛠 Utilizes Firebase services for authentication, storage, and real-time database (Firestore).',
+          '📝 Features include emoji support, message editing, and deletion.',
+          '📷 Users can send images in their chat conversations.',
+          '👤 Custom Avatars: Users can upload custom avatars from their profiles.',
+          '🟢 Online/Offline Status: Displays whether a user is online or offline.',
+          '🔒 Blocking Users: Users can block and unblock others as needed.',
+          '📬 Unread Message UI: Delivers a wonderful UI design for handling unread messages.',
+        ]}
+        demoLink='https://your-demo-link-here'
+        codeLink='https://your-github-link-here'
         technologies={technologies}
       />
     </div>
-  )
-}
+  );
+};
 
-export default NextChatApp
+export default NextChatApp;
