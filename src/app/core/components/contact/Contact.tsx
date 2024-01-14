@@ -1,21 +1,18 @@
-/* eslint react/no-unescaped-entiities */
+"use client"
 import React from 'react'
 import Link from 'next/link'
-
-
 import Image from 'next/image'
-import { AiFillGithub, AiOutlineTwitter, AiOutlineMail } from 'react-icons/ai'
-import { RiLinkedinFill } from 'react-icons/ri'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import Form from './Form'
 import SocialMediaLinks from '../home/SocialMediaLinks'
+import AnimatedText from '../about/AnimatedText'
 
 const Contact = () => {
   return (
     <div id='contact' className='w-full bg-bodyBackground text-textColor'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
-        <h2 className='py-4'>Let's get in touch</h2>
+      <AnimatedText text='Contact'/>
+        <p className='py-4 text-2xl font-bold'>Let's get in touch</p>
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left  */}
 

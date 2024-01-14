@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { blue, green, yellow } from "../utils/colors";
@@ -9,6 +9,10 @@ import { AboutItem } from "./AboutItem";
 import { useInView } from "react-intersection-observer";
 import gsap from "gsap";
 import Flip from "gsap/Flip";
+import AnimatedText from "./AnimatedText";
+
+const ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
 const About = () => {
   const { ref, inView } = useInView({});
   const [show, setShow] = useState(inView);
@@ -40,15 +44,38 @@ const About = () => {
       });
     });
   }, []);
+
+  const [header, setHeader] = useState("About");
+  useEffect(() => {
+    animate();
+  }, []);
+
+  function animate() {
+    let iteration = 0;
+    let interval = setInterval(() => {
+      setHeader("");
+      let newStr = "";
+      "About".split("").forEach((element, index) => {
+        let char = ALPHABETS[Math.round(Math.random() * 26)] ?? "M";
+        if (index < iteration) {
+          char = "About"[index];
+        }
+        newStr += char;
+      });
+      setHeader(newStr);
+      iteration += 1;
+      if (iteration > "About".length) {
+        clearInterval(interval);
+      }
+    }, 60);
+  }
+
   return (
     <div id="about" className="w-full  p-2 flex items-center py-16 overflow-x-hidden bg-bodyBackground" ref={ref}>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 text-textColor">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
-            {" "}
-            About
-          </p>
-          <h2 className="py-4 ">Who I Am</h2>
+          <AnimatedText text="ABOUT" />
+          <p className="py-4 text-2xl font-bold">Who I Am</p>
           <p>
           Hey there! I'm a student with a deep interest in cutting-edge technologies, especially when it comes to crafting awesome digital experiences.  <br/> <br/>
           I've got the tech toolkit. My drive? Crafting exceptional digital experiences. <br/>
@@ -59,8 +86,8 @@ const About = () => {
           <p>
           Currently I am working as a Full Stack Developer, my journey reflects continuous growth and a commitment to excellence in the ever-evolving tech landscape.
           </p>
-          <div className="flex flex-col h-40 overflow-x-hidden">
-          <h2 className="mt-2">Education</h2>
+          <div className="flex flex-col h-40 ">
+          <p className="mt-2 text-2xl font-bold">Education</p>
           <Text>
           <Educations>
             <AboutItem
@@ -79,13 +106,15 @@ const About = () => {
                   p: "High School (2018-2020)",
                   image: "/assets/images/vksu.png",
                 }} active={undefined}            />
-            <AboutItem
+                <div className="md:flex sm:hidden">
+                <AboutItem
                 color={yellow}
                 data={{
                   title: "Scottish Central School, Sasaram",
                   p: "Secondary Education (2017-2018)",
                   image: "/assets/images/school.jpeg",
                  }} active={undefined}            />
+                </div>
           </Educations>
         </Text>
         </div>

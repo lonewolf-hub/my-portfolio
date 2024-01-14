@@ -1,14 +1,14 @@
-/* eslint react/no-unescaped-entiities */
-
+"use client"
 import React from 'react'
 
 import Projectitems from './components/ProjectItems';
+import AnimatedText from '../about/AnimatedText';
 
 const Projects = () => {
   return (
     <div id='project' className='w-full bg-bodyBackground text-textColor'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest font-semibold uppercase text-[#5651e5]'> Projects </p>
+        <AnimatedText text='Projects'/>
         <h2 className='py-4'>Have a look at what I've built</h2>
 
         <div className='grid md:grid-cols-2 gap-8'>

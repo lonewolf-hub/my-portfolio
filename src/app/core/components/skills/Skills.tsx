@@ -1,13 +1,15 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import SkillItem from './SkillItems'
+import AnimatedText from '../about/AnimatedText'
 
 const Skills = () => {
   return (
     <div id='skills' className='w-full h-auto p-2 bg-bodyBackground text-textColor'>
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-            <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Skills</p>
-            <h2 className='py-4 '>What I can do</h2>
+        <AnimatedText text="Skills" />
+            <p className='py-4 text-2xl font-bold'>What I can do</p>
             <h2 className='py-0 text-xl '>Programming Languages I know</h2>
             <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 mt-3'>
               <SkillItem imageSrc='/assets/skills/typescript.png' skillName='TYPESCRIPT'/>
