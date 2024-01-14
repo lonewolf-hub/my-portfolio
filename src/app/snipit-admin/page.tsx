@@ -16,6 +16,7 @@ const SnipitAdmin = () => {
         codeLink='https://github.com/Shivam-vishwakarma991/Drawing-App-HTML-Canvas'
         technologies={technologies}
       />
+      
     </div>
   )
 }

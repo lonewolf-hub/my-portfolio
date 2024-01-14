@@ -57,7 +57,7 @@ li{
 }
 
 button{
-  @apply shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#59fff7] to-[#0f73d8] text-white
+  @apply shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#56d5e8] to-[#1079e1] text-white
 }
 
 .dark_mode {

@@ -52,7 +52,7 @@ const Navbar = () => {
     <div key={pathname} style={{backgroundColor : navBg}} 
     className={shadow? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-bodyBackground'> 
-        <Image src={"/assets/icon/js.png"} alt= "image" width={60} height={50} />
+        <Image src={"/assets/icon/js.svg"} alt= "image" width={60} height={50} />
 
         <div className='text-textColor'>
           <ul className='hidden md:flex'>

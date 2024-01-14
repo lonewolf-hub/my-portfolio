@@ -8,6 +8,7 @@ import { AiFillGithub, AiOutlineTwitter, AiOutlineMail } from 'react-icons/ai'
 import { RiLinkedinFill } from 'react-icons/ri'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import Form from './Form'
+import SocialMediaLinks from '../home/SocialMediaLinks'
 
 const Contact = () => {
   return (
@@ -37,48 +38,8 @@ const Contact = () => {
                 <p className=' uppercase pt-8'>Connect with me</p>
 
                 {/* contactinfo */}
-                <div className='flex items-center justify-between py-4'>
-
-                  <a
-                    href="https://www.linkedin.com/in/jai-shukla-56041016a/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-
-                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <RiLinkedinFill />
-                    </div>
-                  </a>
-
-
-                  <a
-                    href="https://github.com/lonewolf-hub"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <AiFillGithub />
-                    </div>
-                  </a>
-                  <a
-                    href="https://twitter.com/JaiShukla9128"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <AiOutlineTwitter />
-                    </div>
-                  </a>
-                  <a
-                    href="mailto: iamshuklajai@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <AiOutlineMail />
-                    </div>
-                  </a>
-
+                <div className='flex items-center justify-center py-4'>
+                  <SocialMediaLinks/>
                 </div>
               </div>
             </div>
