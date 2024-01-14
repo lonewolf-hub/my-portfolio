@@ -38,7 +38,7 @@ const HomeComponent = () => {
           <p className='py-4 text-textColor max-w-[70%] m-auto '>
             Hey there! I'm a fresh graduate super excited about web development, both the front and back ends. I'm all about diving into cool technologies like Next.js and React.js, and I'm totally hooked on TypeScript. Now, I'm on a mission to amp up my skills and explore the fascinating world of decentralized tech. Can't wait to see where this journey takes me! 🚀 #TechEnthusiast #WebDevPassion</p>
 
-          <div className='flex justify-center'>
+          <div className='flex justify-center items-center'>
             <SocialMediaLinks />
           </div>
           <div className='my-4 flex items-center justify-center'>

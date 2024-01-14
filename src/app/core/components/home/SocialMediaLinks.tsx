@@ -26,7 +26,7 @@ const SocialMediaLinks: React.FC = () => {
   ];
 
   return (
-    <div className='flex items-center justify-between min-w-[400px] sm:max-w-[100px]  py-4'>
+    <div className='flex items-center gap-10 md:gap-12 lg:gap-14 py-4'>
       {socialLinks.map((link, index) => (
         <SocialLink key={index} href={link.href} icon={link.icon} />
       ))}

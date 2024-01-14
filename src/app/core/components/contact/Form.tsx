@@ -18,23 +18,16 @@ const Form = () => {
                     </label>
                     <input name='name' className='border-2 rounded-lg p-3 flex border-gray-500 bg-transparent' type="text" required />
                   </div>
-
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>
-                      Phone Number
-                    </label>
-                    <input name='phone' className='border-2 rounded-lg p-3 flex border-gray-500 bg-transparent' type="text" />
-                  </div>
-
-                </div>
-
-                <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>
                     EMAIL
                   </label>
                   <input name='email' className='border-2 rounded-lg p-3 flex border-gray-500 bg-transparent' type="email" required />
 
                 </div>
+                </div>
+
+            
 
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>

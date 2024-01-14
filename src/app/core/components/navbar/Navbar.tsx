@@ -1,12 +1,10 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu,AiFillGithub, AiOutlineTwitter, AiOutlineMail} from 'react-icons/ai'
 import {RiLinkedinFill} from 'react-icons/ri'
 import DarkMode from '../darkmode/DarkMode';
-import SocialMediaLinks from '../home/SocialMediaLinks';
 const Navbar = () => {
 
   const[nav,setnav]= useState(false)
@@ -110,7 +108,25 @@ const Navbar = () => {
 
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
 
-               <SocialMediaLinks/>
+             
+              <a href='https://www.linkedin.com/in/jai-shukla-56041016a/'> <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'> 
+                  <RiLinkedinFill/>
+                </div> </a>
+                <a href='https://github.com/lonewolf-hub'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'> 
+                  <AiFillGithub/>
+                </div>
+                </a>
+              <a href='https://twitter.com/JaiShukla9128'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'> 
+                 <AiOutlineTwitter/>
+                </div>
+                </a>
+                <a href='mailto: iamshuklajai@gmail.com'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'> 
+                  <AiOutlineMail/>
+                </div>
+                </a>
               </div>
               </div>
             </div>

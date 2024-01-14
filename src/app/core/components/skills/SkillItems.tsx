@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Image from 'next/image';
 
@@ -12,10 +11,17 @@ const SkillItem: React.FC<SkillItemProps> = ({ imageSrc, skillName }) => {
     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
       <div className='grid grid-cols-2 gap-4 justify-center items-center'>
         <div className='m-auto'>
-          <Image src={imageSrc} width={64} height={64} alt={skillName} />
+          {/* Smaller image size on mobile devices */}
+          <Image
+            src={imageSrc}
+            width={60}
+            height={60}
+            alt={skillName}
+            className='w-12 h-12 md:w-16 md:h-16' // Adjust the width and height for smaller screens
+          />
         </div>
         <div>
-          <h3 className='flex flex-col items-center justify-center'>{skillName}</h3>
+          <h3 className='flex flex-col items-center justify-center text-xs md:text-base'>{skillName}</h3>
         </div>
       </div>
     </div>
