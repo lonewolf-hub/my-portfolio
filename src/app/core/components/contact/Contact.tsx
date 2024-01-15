@@ -49,8 +49,8 @@ const Contact = () => {
 
         <div className='flex justify-center py-12'>
           <Link href='/'>
-            <div className='rounded-full shadow-lg shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300' >
-              <HiOutlineChevronDoubleUp className='text-[#59fff7]' size={30} />
+            <div className='rounded-full shadow-lg shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accentColor' >
+              <HiOutlineChevronDoubleUp className='text-[#21e9ff]' size={30} />
             </div>
           </Link>
         </div>
