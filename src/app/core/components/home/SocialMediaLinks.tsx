@@ -10,7 +10,7 @@ interface SocialLinkProps {
 const SocialLink: React.FC<SocialLinkProps> = ({ href, icon: Icon }) => {
   return (
     <a href={href} target="_blank" rel="noreferrer">
-      <div className='flex rounded-xl shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-110 ease-in duration-300 '>
+      <div className='flex rounded-lg shadow-md shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accentColor'>
         <Icon className="text-textColor" />
       </div>
     </a>
@@ -25,8 +25,8 @@ const SocialMediaLinks: React.FC = () => {
     { href: "mailto: iamshuklajai@gmail.com", icon: AiOutlineMail },
   ];
 
-  return (
-    <div className='flex items-center gap-10 md:gap-12 lg:gap-14 py-4'>
+  return ( 
+    <div className='flex items-center gap-10 md:gap-12 lg:gap-14 py-4 '>
       {socialLinks.map((link, index) => (
         <SocialLink key={index} href={link.href} icon={link.icon} />
       ))}

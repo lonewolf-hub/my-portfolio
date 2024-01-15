@@ -57,10 +57,10 @@ const Navbar = () => {
           </div>
         </Link>
         <div className='text-textColor'>
-          <ul className='hidden md:flex items-center justify-center gap-5'>
+          <ul className='hidden md:flex items-center justify-center gap-4'>
             {NAV_ITEMS.map(({ label, href }) => (
               <Link key={label} href={href}>
-                <li className='text-sm  uppercase font-semibold hover:border-b rounded-full py-1 px-2' onClick={() => setnav(false)}>
+                <li className='text-sm  uppercase font-semibold hover:border-b hover:shadow-md shadow-gray-700 rounded-full py-1 px-3' onClick={() => setnav(false)}>
                   {label}
                 </li>
               </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 {SOCIAL_LINKS.map(({ href, icon }) => (
                   <a key={href} href={href}>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <div className='rounded-md shadow-md shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300 bg-bodyColor'>
                       {icon}
                     </div>
                   </a>

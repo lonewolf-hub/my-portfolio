@@ -98,7 +98,7 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto shadow-lg shadow-gray-700 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 sm:flex-row sm:p-8 ">
+        <div className="w-full h-auto shadow-lg shadow-gray-700 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 sm:flex-row sm:p-8 bg-bodyColor ">
           <Image
             className="rounded-3xl rounded-tr-3xl object-contain md:object-cover"
             src={"/assets/images/jai.jpg"}

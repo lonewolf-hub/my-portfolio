@@ -1,15 +1,20 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss/utilities";  
 
 :root{
   --body_background: #ecf0f3;
   --text_color: #201e1e;
+  --body_color: #c5edeb;
+  --accent_color: #a7eaf5;
 }
-
+  
 [data-theme="dark"]{
   --body_background: #282323;
-  --text_color: #dcd1d1;
+  --text_color: #dcd1d1;  
+  --body_color: #0302026e;
+  --accent_color: #0101013d;
+
 }
 
 html {
