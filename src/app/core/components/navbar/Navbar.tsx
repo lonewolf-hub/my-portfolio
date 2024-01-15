@@ -33,9 +33,9 @@ const Navbar = () => {
       className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className='flex justify-between items-center w-full h-full px-2 lg:px-16 bg-bodyBackground'>
         <Link href={"#"}>
-        <div style={{ width: 60, height: 60, overflow: 'hidden' }} className='rounded-full'>
-          <Image src={"/assets/images/jaismall.jpg"} alt="image" width={60} height={60} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-        </div>
+          <div style={{ width: 60, height: 60, overflow: 'hidden' }} className='rounded-full'>
+            <Image src={"/assets/images/jaismall.jpg"} alt="image" width={60} height={60} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+          </div>
         </Link>
         <div className='text-textColor'>
           <ul className='hidden md:flex items-center justify-center'>
@@ -75,8 +75,10 @@ const Navbar = () => {
           'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
           <div>
             <div className=' flex w-full items-center justify-between'>
-              <Image src={"/assets/images/jaismall.jpg"} alt="image" width={60} height={60} className='rounded' style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-              <div onClick={handlenav} className='rounded-full  shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+              <div style={{ width: 60, height: 60, }} className='rounded-md'>
+                <Image src={"/assets/images/jaismall.jpg"} alt="image" width={60} height={60} className='rounded' style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+              </div>
+              <div onClick={handlenav} className='rounded  shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                 <AiOutlineClose />
               </div>
             </div>
@@ -133,9 +135,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
 
