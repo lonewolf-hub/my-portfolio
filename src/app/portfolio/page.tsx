@@ -11,7 +11,9 @@ const PortfolioPage = () => {
       <Navbar />
       <ProjectDetail
         imageSrc='/assets/projects/portfolio.png'
-        heading='Interactive Portfolio'
+        projectName='Next Portfolio'
+        projectStack='Next-Js'
+        heading='My Personal Portfolio Website.'
         description={[
           '✨ Explore my interactive portfolio built with Next.js and TypeScript.',
           '🎨 Stylish UI: Features a sleek and modern user interface with styled components and animations.',
@@ -20,9 +22,11 @@ const PortfolioPage = () => {
           '🔧 Animation with GSAP: Implemented animations using GSAP to enhance the user experience.',
           '⚙️ TypeScript: Utilizes TypeScript for type safety and improved code quality.',
           '🔄 Dynamic Content: Content updates dynamically, providing a seamless and engaging browsing experience.',
+          'Got questions or just want to chat superhero stuff? I’m all ears—ready to spill the beans on our tech superheroics!',
+
         ]}
-        demoLink='https://your-demo-link-here'
-        codeLink='https://your-github-link-here'
+        demoLink='https://jai-shukla-full-stack-developer.vercel.app/'
+        codeLink='https://github.com/lonewolf-hub/my-portfolio'
         technologies={technologies}
       />
     </div>

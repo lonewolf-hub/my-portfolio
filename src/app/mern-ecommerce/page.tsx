@@ -10,7 +10,9 @@ const EcommercePage = () => {
       <Navbar />
       <ProjectDetail
         imageSrc='/assets/projects/banner1.png'
-        heading='E-commerce Application'
+        projectName='E-Commerce App'
+        projectStack='React JS'
+        heading='E Commerce App on MERN-Stack'
         description={[
           '🛍 A feature-rich E-commerce Application developed using the MERN (MongoDB, Express.js, React, Node.js) stack.',
           '🌐 Backend & Database: Node.js and Express.js power the backend, MongoDB serves as the database for storing product information.',
@@ -22,9 +24,11 @@ const EcommercePage = () => {
           '🛒 User Experience: Users can easily filter, add products to the cart, and place orders after providing necessary address and payment details.',
           '🎨 Styling: Tailwind CSS is used for styling, providing a clean and responsive design for an enhanced user interface.',
           '📝 Form Handling: Utilized React Hook Form for efficient and performant form handling and validation.',
+          'Got questions or just want to chat superhero stuff? I’m all ears—ready to spill the beans on our tech superheroics!',
+
         ]}
-        demoLink='https://your-demo-link-here'
-        codeLink='https://your-github-link-here'
+        demoLink='https://mern-ecommerce-brown.vercel.app/login'
+        codeLink='https://github.com/lonewolf-hub/mernecommerceapp'
         technologies={technologies}
       />
     </div>

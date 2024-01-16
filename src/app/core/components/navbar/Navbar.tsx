@@ -6,19 +6,33 @@ import { AiOutlineClose, AiOutlineMenu, AiFillGithub, AiOutlineTwitter, AiOutlin
 import { RiLinkedinFill } from 'react-icons/ri'
 import DarkMode from '../darkmode/DarkMode';
 
-export const NAV_ITEMS = [
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface SocialLink {
+  href: string;
+  icon: React.ReactNode;
+}
+
+// Define arrays for navigation items and social links
+
+const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#about' },
   { label: 'Skills', href: '/#skills' },
   { label: 'Projects', href: '/#project' },
   { label: 'Contact', href: '/#contact' },
 ];
-export const SOCIAL_LINKS = [
+
+const SOCIAL_LINKS: SocialLink[] = [
   { href: 'https://www.linkedin.com/in/jai-shukla-56041016a/', icon: <RiLinkedinFill /> },
   { href: 'https://github.com/lonewolf-hub', icon: <AiFillGithub /> },
   { href: 'https://twitter.com/JaiShukla9128', icon: <AiOutlineTwitter /> },
   { href: 'mailto: iamshuklajai@gmail.com', icon: <AiOutlineMail /> },
-];  
+];
+  
 
 const Navbar = () => {
 
@@ -60,7 +74,7 @@ const Navbar = () => {
           <ul className='hidden md:flex items-center justify-center gap-4'>
             {NAV_ITEMS.map(({ label, href }) => (
               <Link key={label} href={href}>
-                <li className='text-sm  uppercase font-semibold hover:border-b hover:shadow-md shadow-gray-700 rounded-full py-1 px-3' onClick={() => setnav(false)}>
+                <li className='text-sm  uppercase font-semibold hover:border-b hover:shadow-md shadow-gray-600 rounded-full py-[5px] px-3' onClick={() => setnav(false)}>
                   {label}
                 </li>
               </Link>
@@ -80,7 +94,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w[60%] md:w-[45%] h-screen bg-bodyBackground p-10 ease-in duration-500'
+              ? 'fixed left-0 top-0 w-[75%] sm:w[60%] md:w-[45%] h-screen bg-bodyBackground p-10 ease-in duration-500 '
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }>
           <div>
@@ -95,7 +109,7 @@ const Navbar = () => {
                   style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
               </div>
-              <div onClick={handlenav} className='rounded  shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+              <div onClick={handlenav} className='rounded  shadow-md shadow-gray-700 p-3 cursor-pointer'>
                 <AiOutlineClose />
               </div>
             </div>

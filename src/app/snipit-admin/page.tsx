@@ -10,7 +10,9 @@ const SnipitAdmin = () => {
       <Navbar />
       <ProjectDetail
         imageSrc='/assets/projects/snipit-admin.png'
-        heading='Snipit Admin Panel'
+        projectName='Snipit Admin'
+        projectStack='Next JS'
+        heading='Admin Panel For Feeding And Managing the News.'
         description={[
           '🚀 An Admin Panel built with Next.js, TypeScript, and Tailwind CSS.',
           '📰 Manage and feed news into the database with ease.',
@@ -20,9 +22,10 @@ const SnipitAdmin = () => {
           '📅 Bulk scheduling and advanced news filtering options available.',
           '✏ If a news item is in draft state, you can edit and set it to the active state.',
           '🔀 Conditional Dropdowns: Implements React Select for rendering custom dropdowns conditionally.',
+          '🔗 Unfortunately, I cannot provide public access to the codebase or a live demo for this project,',
+          'as it is owned by the company where I completed my internship.',
         ]}
-        demoLink='https://your-demo-link-here'
-        codeLink='https://your-github-link-here'
+        hidden={true}
         technologies={technologies}
       />
     </div>

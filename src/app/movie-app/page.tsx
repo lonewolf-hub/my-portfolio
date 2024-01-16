@@ -10,6 +10,8 @@ const MovieApp = () => {
       <Navbar />
       <ProjectDetail
         imageSrc='/assets/projects/portfolio.png'
+        projectName='Movie App'
+        projectStack='React JS'
         heading='Vite React Movie App'
         description={[
           '🚀 Experience the speed and efficiency of Vite in the React Movie App.',
@@ -22,9 +24,11 @@ const MovieApp = () => {
           '🌐 Data Source: Utilizes the News API as a data source to fetch and render movie information.',
           "💡 Lightweight: Vite's speedy development server and optimized bundling contribute to a lightweight app.",
           '💅 Styling: Implements styled-components for styling, providing a sleek and modern user interface.',
+          'Got questions or just want to chat superhero stuff? I’m all ears—ready to spill the beans on our tech superheroics!',
+
         ]}
-        demoLink='https://your-demo-link-here'
-        codeLink='https://your-github-link-here'
+        demoLink='https://reactmovieapp-vite.vercel.app/'
+        codeLink='https://github.com/lonewolf-hub/reactmovieapp'
         technologies={technologies}
       />
     </div>

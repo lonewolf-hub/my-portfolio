@@ -10,7 +10,9 @@ const AmbulanceApp = () => {
       <Navbar />
       <ProjectDetail
         imageSrc='/assets/projects/ambulance.png'
-        heading='Ambulance Booking Application'
+        heading='Ambulance Management Application with Next Js'
+        projectName='Ambulance Booking App'
+        projectStack='Next JS'
         description={[
           '🚑 An Ambulance Booking Application developed using Next.js and TypeScript.',
           '💡 The application serves as a platform for users to book ambulances during emergencies.',
@@ -19,9 +21,9 @@ const AmbulanceApp = () => {
           '👩‍⚕️ Admin Functionality: Admin roles have the capability to add new ambulances to the system.',
           '🔒 Secure Data: The application ensures secure storage of data using MongoDB for reliability and safety.',
           '🌈 UI/UX: Designed with a focus on providing an intuitive and visually appealing user experience.',
+          'Got questions or just want to chat superhero stuff? I’m all ears—ready to spill the beans on our tech superheroics!',
         ]}
-        demoLink='https://your-demo-link-here'
-        codeLink='https://your-github-link-here'
+        hidden={true}
         technologies={technologies}
       />
     </div>

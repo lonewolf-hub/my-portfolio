@@ -10,6 +10,8 @@ const RailwayApp = () => {
       <Navbar />
       <ProjectDetail
         imageSrc='/assets/projects/railway1.png'
+        projectName='Get CTT'
+        projectStack='Next JS'
         heading='Railway Ticket Booking App'
         description={[
           '🚄 Embark on a seamless journey of Railway Ticket Booking Application, a sophisticated and user-friendly platform.',
@@ -22,9 +24,11 @@ const RailwayApp = () => {
           '🔒 Security is a top priority, and the app adheres to industry best practices to safeguard user data and transactions.',
           '📚 This project significantly contributed to my learning journey, enhancing my skills in building robust, production-ready applications.',
           '🔗 Explore the app further by checking out the demo and the open-source code repository.',
+          '🔗 Unfortunately, I cannot provide public access to the codebase or a live demo for this project,',
+          'as it is owned by the company where I completed my internship.',
+          
         ]}
-        demoLink={""}
-        codeLink={""}
+        hidden={true}
         technologies={technologies}
       />
     </div>

@@ -16,7 +16,7 @@ const Contact = () => {
         <div className='grid lg:grid-cols-5 gap-8 '>
           {/* left  */}
 
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-lg rounded-xl shadow-gray-700 rounded-xl- p-4 bg-bodyColor'>
+          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md rounded-xl shadow-gray-700 rounded-xl- p-4 bg-bodyColor'>
             <div className='lg:p-4 h-full '>
               <div>
                 <Image
@@ -49,7 +49,7 @@ const Contact = () => {
 
         <div className='flex justify-center py-12'>
           <Link href='/'>
-            <div className='rounded-full shadow-lg shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accentColor' >
+            <div className='rounded-full shadow-md shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accentColor' >
               <HiOutlineChevronDoubleUp className='text-[#21e9ff]' size={30} />
             </div>
           </Link>

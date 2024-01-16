@@ -10,9 +10,12 @@ interface ProjectDetailProps {
   imageSrc: string;
   heading: string;
   description: string[];
-  demoLink: string;
-  codeLink: string;
+  demoLink?: string;
+  codeLink?: string;
   technologies: string[];
+  projectName?: string; // Added projectName prop
+  projectStack?: string; // Added projectStack prop
+  hidden?: boolean;
 }
 
 const ProjectDetail: React.FC<ProjectDetailProps> = ({
@@ -22,13 +25,26 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
   demoLink,
   codeLink,
   technologies,
+  projectName,
+  projectStack,
+  hidden = false,
 }) => {
   return (
-    <div className='w-full overflow-x-hidden bg-bodyBackground text-textColor'>
-      <div className='w-screen h-[50vh] relative'>
+    <div className='w-full overflow-x-hidden bg-bodyBackground text-textColor relative'>
+      <div className='w-screen h-[55vh] relative'>
         {/* ... your existing code for the image */}
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={imageSrc} alt={heading} />
-        <div className='absolute z-2 w-full h-full' style={{ background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3))' }}></div>
+        <div className='absolute z-2 w-full h-full flex flex-col items-start justify-end text-textColor p-4 lg:mx-32'>
+          <div className='flex flex-col items-start justify-start bg-accentColor p-2 rounded shadow-md shadow-gray-700'>
+          {projectName && <h2 className=' font-bold'>{projectName}</h2>}
+          {projectStack && (
+            <div className='flex py-2 items-center justify-center text-xl'>
+              <RiRadioButtonFill className='pr-1' /> {projectStack}
+            </div>
+          )}
+          </div>
+        
+        </div>
       </div>
 
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
@@ -43,15 +59,17 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
               </div>
             ))}
           </div>
+          {!hidden && (
+            <>
+              <a href={demoLink}>
+                <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+              </a>
 
-
-          <a href={demoLink}>
-            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          </a>
-
-          <a href={codeLink}>
-            <button className='px-8 py-2 mt-4'>Code</button>
-          </a>
+              <a href={codeLink}>
+                <button className='px-8 py-2 mt-4'>Code</button>
+              </a>
+            </>
+          )}
         </div>
 
         <div className='col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl py-4 bg-bodyColor'>
