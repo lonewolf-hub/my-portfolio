@@ -60,7 +60,7 @@ const Navbar = () => {
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className='flex justify-between items-center w-full h-full px-2 lg:px-16 bg-bodyBackground'>
         <Link href={'#'}>
-          <div style={{ width: 60, height: 60, overflow: 'hidden' }} className='rounded-full'>
+          <div style={{ width: 60, height: 60, overflow: 'hidden' }} className='rounded-full shadow-md shadow-gray-600'>
             <Image
               src={'/assets/images/jaismall.jpg'}
               alt='image'
