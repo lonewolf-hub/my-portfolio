@@ -42,7 +42,7 @@ const HomeComponent = () => {
             <SocialMediaLinks />
           </div>
           <div className='my-4 flex items-center justify-center'>
-            <a href='/assets/resume/jairesume.pdf' download='Jai_Shukla_Resume.pdf'>
+            <a href='/assets/resume' download='Jai_Shukla_Resume.pdf'>
               <button className='flex text-white py-2 px-6 rounded-full  transition duration-300'>
                 Download Resume
                 <AiOutlineDownload className='text-xl mr-2' />
