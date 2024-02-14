@@ -69,24 +69,24 @@ const About = () => {
               active
               data={{
                 title: "Gopal Narayan Singh University, Jamuhar",
-                p: "Bachelors of Computer Application (2020-2023)",
+                p: "Masters of Computer Application (2021-2023)",
                 image: "/assets/images/gnsu.jpeg",
               }}
             />
             <AboutItem
                 color={green}
                 data={{
-                  title: "Veer Kunwar Singh University, Ara",
-                  p: "High School (2018-2020)",
-                  image: "/assets/images/vksu.png",
+                  title: "Gopal Narayan Singh University, Jamuhar",
+                  p: "Bachelors of Computer Application (2018-2021)",
+                  image: "/assets/images/gnsu.jpeg",
                 }} active={undefined}            />
                 <div className="md:flex sm:hidden">
                 <AboutItem
                 color={yellow}
                 data={{
-                  title: "Scottish Central School, Sasaram",
-                  p: "Secondary Education (2017-2018)",
-                  image: "/assets/images/school.jpeg",
+                  title: "Veer Kunwar Singh University, Ara",
+                  p: "High School (2016-2018)",
+                  image: "/assets/images/vksu.png",
                  }} active={undefined}            />
                 </div>
           </Educations>
