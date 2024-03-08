@@ -21,7 +21,7 @@ const AmbulanceApp = () => {
           '👩‍⚕️ Admin Functionality: Admin roles have the capability to add new ambulances to the system.',
           '🔒 Secure Data: The application ensures secure storage of data using MongoDB for reliability and safety.',
           '🌈 UI/UX: Designed with a focus on providing an intuitive and visually appealing user experience.',
-          'Got questions or just want to chat superhero stuff? I’m all ears—ready to spill the beans on our  superheroics!',
+          'Got questions or just want to chat superhero stuff? I’m all ears—ready to spill the beans on our tech superheroics!',
         ]}
         hidden={true}
         technologies={technologies}
