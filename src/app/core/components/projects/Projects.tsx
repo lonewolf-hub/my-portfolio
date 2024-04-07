@@ -18,6 +18,7 @@ const Projects = () => {
           <Projectitems title='React Movie App' backgroundImg={"/assets/projects/movieapp.png"} projectUrl='/movie-app' stack="React Js" />
           <Projectitems title='Ambulance Booking App' backgroundImg={"/assets/projects/ambulance.png"} projectUrl='/ambulance' stack="Next Js" />
           <Projectitems title='MERN E-Commerce' backgroundImg={"/assets/projects/banner1.png"} projectUrl='/mern-ecommerce' stack="React-Js" />
+          <Projectitems title='Drawing App' backgroundImg={"/assets/projects/drawingapp.png"} projectUrl='/drawing-app' stack="Next Js" />
         </div>
       </div>
     </div>
