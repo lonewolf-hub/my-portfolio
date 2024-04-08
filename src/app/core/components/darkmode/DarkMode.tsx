@@ -19,6 +19,22 @@ const DarkMode = () => {
     setTheme(selectedTheme);
   }, [selectedTheme]);
 
+  useEffect(() => {
+    // Initialize UI based on stored theme
+    const storedTheme = localStorage.getItem('selectedTheme');
+    if (storedTheme) {
+      setSelectedTheme(storedTheme as 'light' | 'dark');
+    }
+  }, []);
+
+  useEffect(() => {
+    // Update UI based on selected theme
+    const darkModeToggle = document.getElementById('darkmode-toggle') as HTMLInputElement;
+    if (darkModeToggle) {
+      darkModeToggle.checked = selectedTheme === 'dark';
+    }
+  }, [selectedTheme]);
+
   return (
     <div className="relative flex space-x-2">
       <label htmlFor="darkmode-toggle" className="cursor-pointer">
