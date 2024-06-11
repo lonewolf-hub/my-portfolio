@@ -62,7 +62,7 @@ const Navbar = () => {
         <Link href={'#'}>
           <div style={{ width: 60, height: 60, overflow: 'hidden' }} className='rounded-full shadow-md shadow-gray-600'>
             <Image
-              src={'/assets/images/jaismall.jpg'}
+              src={'/assets/images/jai.jpg'}
               alt='image'
               width={60}
               height={60}
