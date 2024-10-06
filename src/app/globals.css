@@ -2,13 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";  
 
-:root{
+
+[data-theme="light"]{
   --body_background: #ecf0f3;
   --text_color: #201e1e;
   --body_color: #c5edeb;
   --accent_color: #a7eaf5;
 }
-  
+
 [data-theme="dark"]{
   --body_background: #282323;
   --text_color: #dcd1d1;  
