@@ -55,6 +55,7 @@ const About = () => {
          <br/>
          My stack includes JavaScript, TypeScript, Node.js, React.js, Next.js, and Tailwind CSS—tools I use daily to bring designs and logic together seamlessly.
           </p>
+          <br/>
           <pre/>
           <p>
          Currently working as a Full Stack Developer, I see every project as a new opportunity to learn, grow, and push the boundaries of what I can create. I’m driven by curiosity, a love for problem-solving, and the excitement of building for the web in an ever-changing tech world.
