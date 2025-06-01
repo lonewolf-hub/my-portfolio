@@ -35,8 +35,7 @@ const HomeComponent = () => {
             </Position>
           </div>
 
-          <p className='py-4 text-textColor max-w-[70%] m-auto '>
-            Hey there! I'm a fresh graduate super excited about web development, both the front and back ends. I'm all about diving into cool technologies like Next.js and React.js, and I'm totally hooked on TypeScript. Now, I'm on a mission to amp up my skills and explore the fascinating world of decentralized tech. Can't wait to see where this journey takes me! 🚀 #TechEnthusiast #WebDevPassion</p>
+          <p className='py-4 text-textColor max-w-[70%] m-auto '>I'm a full stack developer who enjoys building things that live on the web—whether it's a smooth user interface or the logic behind it. I work mostly with React, Next.js, and TypeScript, and I’m always looking for better ways to solve problems and write cleaner code. Lately, I’ve been exploring decentralized tech, and it's been both challenging and exciting. I’m still learning, still curious, and genuinely enjoy the process of figuring things out one project at a time.</p>
 
           <div className='flex justify-center items-center'>
             <SocialMediaLinks />
