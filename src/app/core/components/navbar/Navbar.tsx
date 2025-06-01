@@ -58,11 +58,11 @@ const Navbar = () => {
 
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
-      <div className='flex justify-between items-center w-full h-full px-2 lg:px-16 bg-bodyBackground'>
+      <div className='flex justify-between items-center w-full h-full px-2 lg:px-36 bg-bodyBackground'>
         <Link href={'#'}>
-          <div style={{ width: 60, height: 60, overflow: 'hidden' }} className='rounded-full shadow-md shadow-gray-600'>
+          <div style={{ width: 60, height: 60, overflow: 'hidden' }} >
             <Image
-              src={'/assets/images/jai.jpg'}
+              src={'/assets/icon/j6.png'}
               alt='image'
               width={60}
               height={60}
@@ -99,9 +99,9 @@ const Navbar = () => {
           }>
           <div>
             <div className=' flex w-full items-center justify-between'>
-              <div style={{ width: 60, height: 60 }} className='rounded-md'>
+              <div style={{ width: 60, height: 60 }} >
                 <Image
-                  src={'/assets/images/jaismall.jpg'}
+                  src={'/assets/icon/j6.png'}
                   alt='image'
                   width={60}
                   height={60}
