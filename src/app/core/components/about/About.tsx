@@ -54,15 +54,19 @@ const About = () => {
           <AnimatedText text="ABOUT" />
           <p className="py-4 text-2xl font-bold">Who I Am</p>
           <p>
-            Hey! I'm someone who’s genuinely passionate about building meaningful digital experiences through code. I love working with modern web technologies and enjoy turning ideas into interactive, well-crafted products.<br />
-            <br />
-            My stack includes JavaScript, TypeScript, Node.js, React.js, Next.js, and Tailwind CSS—tools I use daily to bring designs and logic together seamlessly.
+            Hey, I am someone who is genuinely passionate about creating meaningful digital experiences through code. I enjoy working with modern web technologies and turning ideas into interactive and well-crafted products.
           </p>
           <br />
           <pre />
           <p>
-            Currently working as a Full Stack Developer, I see every project as a new opportunity to learn, grow, and push the boundaries of what I can create. I’m driven by curiosity, a love for problem-solving, and the excitement of building for the web in an ever-changing tech world.
+            My core stack includes JavaScript, TypeScript, Node.js, React, Next.js and Tailwind CSS. These are the tools I use every day to bring together design and logic in a seamless way.
           </p>
+          <br />
+          <pre />
+          <p>
+            I currently work as a Full Stack Developer and see every project as a chance to learn, grow and push what I can build. I am driven by curiosity, a strong focus on problem solving and the excitement of building for the web in a fast-moving tech landscape.
+          </p>
+
           <div className="md:flex flex-col space-y-4 hidden mt-4">
             <p className="mt-2 text-2xl font-bold">Education</p>
             <div className="flex flex-wrap gap-4 mt-2">

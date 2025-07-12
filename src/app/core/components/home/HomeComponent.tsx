@@ -35,7 +35,9 @@ const HomeComponent = () => {
             </Position>
           </div>
 
-          <p className='py-4 text-text max-w-[70%] m-auto '>Whether it's designing user-friendly user interfaces or developing the backend logic, I'm a full stack developer who is passionate about developing web applications. I mostly work with TypeScript, Next.js, and React, and I'm constantly trying to write code that is more streamlined and effective. I've been investigating decentralised technologies lately, which has been interesting and difficult. I enjoy solving problems one project at a time, am always learning, and maintain my curiosity.</p>
+          <p className="py-4 text-text max-w-[70%] m-auto">
+            I am a full stack developer who enjoys building clean and efficient web applications. I mostly work with TypeScript, Next.js and React, and focus on writing code that is easy to maintain and performs well. Recently I have been exploring decentralized technologies to expand how I solve problems. I like working across both the frontend and backend, and I am always learning and refining my approach with every project.
+          </p>
 
           <div className='flex justify-center items-center'>
             <SocialMediaLinks />
