@@ -10,7 +10,7 @@ import AnimatedText from '../about/AnimatedText'
 const Contact = () => {
   return (
     <div id='contact' className='w-full bg-background text-text'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
+      <div className='max-w-[1240px] m-auto px-2 py-20 w-full '>
       <AnimatedText text='Contact'/>
         <p className='py-4 text-2xl font-bold'>Let's get in touch</p>
         <div className='grid lg:grid-cols-5 gap-8 '>

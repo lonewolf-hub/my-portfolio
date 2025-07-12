@@ -50,7 +50,7 @@ const About = () => {
   return (
     <div id="about" className="w-full  p-2 flex items-center py-16 overflow-x-hidden bg-background" ref={ref}>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 text-text">
-        <div className="col-span-2">
+        <div className="col-span-2 mt-4">
           <AnimatedText text="ABOUT" />
           <p className="py-4 text-2xl font-bold">Who I Am</p>
           <p>

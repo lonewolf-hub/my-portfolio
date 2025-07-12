@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Urbanist } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/context/ThemeContext'
-import ThemeScript from './core/helpers/ThemeScript'
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -20,12 +19,30 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/assets/icon/j.png" />
+
+        {/* ✅ THE CRITICAL INLINE SCRIPT */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme');
+                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (theme === 'dark' || (!theme && prefersDark)) {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch(_) {}
+              })();
+            `,
+          }}
+        />
       </head>
       <body className={urbanist.className}>
-        <ThemeScript />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
