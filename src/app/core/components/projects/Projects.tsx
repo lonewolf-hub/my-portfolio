@@ -6,7 +6,7 @@ import AnimatedText from '../about/AnimatedText';
 
 const Projects = () => {
   return (
-    <div id='project' className='w-full bg-bodyBackground text-textColor'>
+    <div id='project' className='w-full bg-background text-text'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
         <AnimatedText text='Projects' />
         <h2 className='py-4 text-2xl'>Have a look at what I've built</h2>

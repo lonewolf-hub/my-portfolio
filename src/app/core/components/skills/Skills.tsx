@@ -6,7 +6,7 @@ import AnimatedText from '../about/AnimatedText'
 
 const Skills = () => {
   return (
-    <div id='skills' className='w-full h-auto p-2 bg-bodyBackground text-textColor'>
+    <div id='skills' className='w-full h-auto p-2 bg-background text-text'>
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <AnimatedText text="Skills" />
             <p className='py-4 text-2xl font-bold'>What I can do</p>

@@ -9,14 +9,14 @@ import AnimatedText from '../about/AnimatedText'
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full bg-bodyBackground text-textColor'>
+    <div id='contact' className='w-full bg-background text-text'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
       <AnimatedText text='Contact'/>
         <p className='py-4 text-2xl font-bold'>Let's get in touch</p>
         <div className='grid lg:grid-cols-5 gap-8 '>
           {/* left  */}
 
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md rounded-xl shadow-gray-700 rounded-xl- p-4 bg-bodyColor'>
+          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md rounded-xl shadow-gray-700 rounded-xl- p-4 bg-body'>
             <div className='lg:p-4 h-full '>
               <div>
                 <Image
@@ -49,7 +49,7 @@ const Contact = () => {
 
         <div className='flex justify-center py-12'>
           <Link href='/'>
-            <div className='rounded-full shadow-md shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accentColor' >
+            <div className='rounded-full shadow-md shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accent' >
               <HiOutlineChevronDoubleUp className='text-[#21e9ff]' size={30} />
             </div>
           </Link>

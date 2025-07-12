@@ -30,12 +30,12 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
   hidden = false,
 }) => {
   return (
-    <div className='w-full overflow-x-hidden bg-bodyBackground text-textColor relative'>
+    <div className='w-full overflow-x-hidden bg-background text-text relative'>
       <div className='w-screen h-[55vh] relative'>
         {/* ... your existing code for the image */}
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={imageSrc} alt={heading} />
-        <div className='absolute z-2 w-full h-full flex flex-col items-start justify-end text-textColor p-4 lg:mx-32'>
-          <div className='flex flex-col items-start justify-start bg-accentColor p-2 rounded shadow-md shadow-gray-700'>
+        <div className='absolute z-2 w-full h-full flex flex-col items-start justify-end text-text p-4 lg:mx-32'>
+          <div className='flex flex-col items-start justify-start bg-accent p-2 rounded shadow-md shadow-gray-700'>
           {projectName && <h2 className=' font-bold'>{projectName}</h2>}
           {projectStack && (
             <div className='flex py-2 items-center justify-center text-xl'>
@@ -72,7 +72,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
           )}
         </div>
 
-        <div className='col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl py-4 bg-bodyColor'>
+        <div className='col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl py-4 bg-body'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1 '>

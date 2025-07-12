@@ -3,7 +3,7 @@ import React from 'react'
 const Form = () => {
   return (
    
-         <div className='col-span-3 w-full h-auto shadow-md shadow-gray-600 rounded-xl lg:p-4 bg-bodyColor'>
+         <div className='col-span-3 w-full h-auto shadow-md shadow-gray-600 rounded-xl lg:p-4 bg-body'>
             <div className='p-4' >
 
               <form action="https://getform.io/f/0ffba336-c158-4b07-88b4-5913264bb217"

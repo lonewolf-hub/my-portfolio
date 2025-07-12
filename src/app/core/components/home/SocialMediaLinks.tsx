@@ -10,8 +10,8 @@ interface SocialLinkProps {
 const SocialLink: React.FC<SocialLinkProps> = ({ href, icon: Icon }) => {
   return (
     <a href={href} target="_blank" rel="noreferrer">
-      <div className='flex rounded-lg shadow-md shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accentColor'>
-        <Icon className="text-textColor" />
+      <div className='flex rounded-lg shadow-md shadow-gray-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300 bg-accent'>
+        <Icon className="text-text" />
       </div>
     </a>
   );
